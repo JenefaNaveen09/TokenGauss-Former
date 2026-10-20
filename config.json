@@ -1,0 +1,135 @@
+{
+ "datasets": [
+  "CICIoT2023",
+  "ToN-IoT"
+ ],
+ "cic_repo": "bencorn/CIC-IoT-2023",
+ "cic_files": [
+  "CSV/MERGED_CSV/Merged01.csv",
+  "CSV/MERGED_CSV/Merged02.csv",
+  "CSV/MERGED_CSV/Merged03.csv",
+  "CSV/MERGED_CSV/Merged04.csv",
+  "CSV/MERGED_CSV/Merged05.csv",
+  "CSV/MERGED_CSV/Merged06.csv",
+  "CSV/MERGED_CSV/Merged07.csv",
+  "CSV/MERGED_CSV/Merged08.csv",
+  "CSV/MERGED_CSV/Merged09.csv",
+  "CSV/MERGED_CSV/Merged10.csv",
+  "CSV/MERGED_CSV/Merged11.csv",
+  "CSV/MERGED_CSV/Merged12.csv"
+ ],
+ "cic_files_confirm": [
+  "CSV/MERGED_CSV/Merged13.csv",
+  "CSV/MERGED_CSV/Merged14.csv",
+  "CSV/MERGED_CSV/Merged15.csv",
+  "CSV/MERGED_CSV/Merged16.csv",
+  "CSV/MERGED_CSV/Merged17.csv",
+  "CSV/MERGED_CSV/Merged18.csv",
+  "CSV/MERGED_CSV/Merged19.csv",
+  "CSV/MERGED_CSV/Merged20.csv",
+  "CSV/MERGED_CSV/Merged21.csv",
+  "CSV/MERGED_CSV/Merged22.csv",
+  "CSV/MERGED_CSV/Merged23.csv",
+  "CSV/MERGED_CSV/Merged24.csv"
+ ],
+ "ton_repo": "codymlewis/TON_IoT_network",
+ "ton_files": [
+  "train_test_network.csv"
+ ],
+ "cap_per_class": 25000,
+ "min_class": 300,
+ "split_frac": [
+  0.6,
+  0.1,
+  0.3
+ ],
+ "drop_cic": [
+  "IAT"
+ ],
+ "open_splits": {
+  "CICIoT2023": {
+   "S1": [
+    "Web",
+    "BruteForce"
+   ],
+   "S2": [
+    "Recon",
+    "Spoofing"
+   ],
+   "S3": [
+    "Mirai",
+    "Web"
+   ]
+  },
+  "CICIoT2023-B": {
+   "S1": [
+    "Web",
+    "BruteForce"
+   ],
+   "S2": [
+    "Recon",
+    "Spoofing"
+   ],
+   "S3": [
+    "Mirai",
+    "Web"
+   ]
+  },
+  "ToN-IoT": {
+   "T1": [
+    "ransomware",
+    "backdoor"
+   ],
+   "T2": [
+    "xss",
+    "password"
+   ],
+   "T3": [
+    "mitm",
+    "scanning"
+   ]
+  }
+ },
+ "k_max": 20,
+ "k": 10,
+ "d": 96,
+ "heads": 4,
+ "layers": 2,
+ "drop": 0.1,
+ "n_time": 8,
+ "n_protos": 3,
+ "scale": 16.0,
+ "margin": 0.2,
+ "lam_c": 0.1,
+ "lam_s": 0.05,
+ "T": 1.0,
+ "epochs": 40,
+ "patience": 8,
+ "min_epochs": 12,
+ "bs": 512,
+ "lr": 0.0003,
+ "wd": 0.0001,
+ "seeds": [
+  42,
+  7,
+  2026
+ ],
+ "ema": 0.995,
+ "eta": 0.02,
+ "conf": 0.99,
+ "gate_q": 0.5,
+ "anchor": 0.95,
+ "chunk": 2048,
+ "tpr": 0.95,
+ "tag": "v2",
+ "M": 3,
+ "alpha": 0.05,
+ "lam_tg": 0.05,
+ "lam_sc": 0.1,
+ "sc_T": 0.1,
+ "beta": 0.1,
+ "vos_cand": 4096,
+ "vos_keep": 256,
+ "warm": 2,
+ "n_fit": 30000
+}
